@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+  
+
+
+
+<template id="print_purchase_aggremt">
+   <t t-call="web.html_container">
+        <t t-call="web.external_layout">
+        <t t-foreach='docs' t-as="o" >
+        <h2>Docs</h2>
+        <span t-esc='o.name'></span>
+        <!-- <p t-esc='o.name'/>  -->
+        </t>
+        <t t-foreach="o.line_ids" t-as='line_ids'>
+        
+        
+                <span t-esc='line_ids.name'></span>
+
+        </t>
+            <!-- <div class="page">
+              <h2 > test here</h2>
+                </div> -->
+            <!-- </div> -->
+        </t>
+    </t>
+    </template>
+
+
+
+    <record id="action_print_purchase_aggremt" model="ir.actions.report">
+        <field name="name">Print purchase aggremnt Payment</field>
+        <field name="model">purchase.requisition</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">purchase_aggrement_report.print_purchase_aggremt</field>
+        <field name="report_file">purchase_aggrement_report.print_purchase_aggremt</field>
+        <field name="binding_model_id" ref="purchase_requisition.model_purchase_requisition"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
+    </data>
+</odoo>

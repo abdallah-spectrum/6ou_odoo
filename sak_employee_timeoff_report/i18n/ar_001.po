@@ -1,0 +1,151 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sak_employee_timeoff_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-22 11:44+0000\n"
+"PO-Revision-Date: 2023-08-22 11:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "<strong> Academic Degree:</strong>"
+msgstr "<strong>الدرجة العلمية</strong>"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "<strong>Department</strong>"
+msgstr "<strong>القسم</strong>"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "<strong>State</strong>"
+msgstr "<strong>الحالة</strong>"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "<strong>name</strong>"
+msgstr "<strong>الاسم</strong>"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.timeoff_report_wizard_view
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__create_date
+msgid "Created on"
+msgstr "تاريخ التسجيل"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.actions.act_window,name:sak_employee_timeoff_report.timeoff_report_action
+msgid "Employee Timeoff Reports"
+msgstr "تقرير اجازات الموظف"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__from_date
+msgid "From Date"
+msgstr "من بداية"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__id
+msgid "ID"
+msgstr ""
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.timeoff_report_wizard_view
+msgid "Print Timeoff Report"
+msgstr "اطبع تقرير الاجازات"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.timeoff_report_wizard_view
+msgid "Print pdf Report"
+msgstr " 'طباعة pdf "
+
+#. module: sak_employee_timeoff_report
+#: model:ir.ui.menu,name:sak_employee_timeoff_report.timeoff_report_menu
+msgid "Timeoff Report"
+msgstr "تقرير اجازات "
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model.fields,field_description:sak_employee_timeoff_report.field_employee_timeoff_report__to_date
+msgid "To Date"
+msgstr "حتي تاريخ"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "allocation type"
+msgstr "نوع الاجازة"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "create date"
+msgstr "تاريخ تسجيل"
+
+#. module: sak_employee_timeoff_report
+#: model:ir.model,name:sak_employee_timeoff_report.model_employee_timeoff_report
+msgid "employee.timeoff.report"
+msgstr ""
+
+#. module: sak_employee_timeoff_report
+#: model:ir.actions.report,name:sak_employee_timeoff_report.action_print_employeeTimeOff_report
+msgid "employee_time_off_details_report"
+msgstr ""
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "end date"
+msgstr "تاريخ انتهاء"
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "number of Days"
+msgstr "عدد الايام "
+
+#. module: sak_employee_timeoff_report
+#: model_terms:ir.ui.view,arch_db:sak_employee_timeoff_report.report_employee_details_id
+msgid "start date"
+msgstr "تاريخ البدء"

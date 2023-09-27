@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tax_main,tax.main,model_tax_main,base.group_user,1,1,1,1
+access_tax_detail,tax.detail,model_tax_detail,base.group_user,1,1,1,1
+penalties_detail,tax.penalties,model_penalties,base.group_user,1,1,1,1

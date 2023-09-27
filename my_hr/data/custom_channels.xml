@@ -1,0 +1,10 @@
+<odoo>
+<record model="mail.channel" id="channel_task_assignees">
+   <field name="name">Task Announcements</field>
+   <field name="description">General announcements for all tasks.</field>
+   <field name="public">groups</field>
+  <field name="group_public_id" ref="base.group_user"/>
+<field name="group_ids" eval="[Command.link(ref('base.group_user'))]"/>
+</record>
+
+</odoo>

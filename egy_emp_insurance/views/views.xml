@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+    <record model='ir.ui.view' id='egy_emp_form_view'>
+        <field name="name">egy.emp.form</field>
+        <field name="model">emp.account.report</field>
+        <field name="arch" type="xml">
+            <form string="Egy.emp">
+                <sheet>
+                    <group>
+                        <field name="account_account" widget="many2many_tags"/>
+                        <field name="report_type"/>
+                        <field name="draft"/>
+                        <field name="posted"/>
+                        <field name="from_date"/>
+                        <field name="to_date"/>
+                        <field name="partner_id"/>
+                         <button name="print_report" string="Print" type="object" class="oe_highlight"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    
+    <record model="ir.ui.view" id="egy_emp_list">
+      <field name="name">egy emp</field>
+      <field name="model">emp.account.report</field>
+      <field name="arch" type="xml">
+        <tree>
+         <field name="from_date"/>
+         <field name="to_date"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="egy_emp_insurance.action_window_main">
+      <field name="name">Debit/Credit Note</field>
+      <field name="res_model">emp.account.report</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem name="insurance" id="egy_emp_insurance.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Debit/Credit" action="egy_emp_insurance.action_window_main" id="egy_emp_insurance.main" sequence="5"  parent="account.menu_finance_payables"/>
+    <!-- actions -->
+    
+</data>
+</odoo>

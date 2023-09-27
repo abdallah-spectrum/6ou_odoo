@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_def_pro_acc_payble_account_def_pro_acc_payble,account_def_pro_acc_payble.account_def_pro_acc_payble,model_account_def_pro_acc_payble_account_def_pro_acc_payble,base.group_user,1,1,1,1

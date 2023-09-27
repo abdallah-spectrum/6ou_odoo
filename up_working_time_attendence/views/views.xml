@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+
+        <record id="view_resource_calendar_attendance_form_inherit" model="ir.ui.view">
+            <field name="name">overnight work times extend</field>
+            <field name="model">resource.calendar.attendance</field>
+            <field name="inherit_id" ref="resource.view_resource_calendar_attendance_tree"/>
+                    <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="cross_day" optional="hide" widget="boolean_toggle"/>
+                </xpath>
+                      </field>
+               </record>
+  </data>
+</odoo>

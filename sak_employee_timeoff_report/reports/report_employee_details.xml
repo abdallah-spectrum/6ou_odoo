@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_employee_details_id">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <page>
+
+
+
+                        <div class='row'>
+                            <div class="col-2">
+                                <strong>Department</strong>
+                            </div>
+                            <div class="col-6">
+                                <span t-out='emp["department_id"]'></span>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class="col-2">
+                                <strong>name</strong>
+                            </div>
+                            <div class="col-6">
+                                <span t-out='emp["name"]'></span>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class="col-5">
+                                <strong> Academic Degree:</strong>
+                            </div>
+                            <div class="col-6">
+                                <span t-out='emp["academic_degree"]'></span>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class="col-3">
+                                <strong>State</strong>
+                            </div>
+                            <div class="col-3">
+                                <span t-out='emp["hr_presence_state"]'></span>
+                            </div>
+                        </div>
+
+                        <table class="table table-sm">
+
+                            <thead>
+                                <th>
+                                    number of Days
+                                </th>
+                                <th>
+                                    end date
+                                </th>
+                                <th>
+                                    start date
+                                </th>
+                                <th>
+                                    allocation type
+                                </th>
+
+                                <th>
+                                    create date
+                                </th>
+
+                            </thead>
+                            <tbody>
+                                <t t-foreach="leave_ids" t-as="leave">
+
+                                    <tr>
+                                        <td>
+                                            <span t-out="leave['duration_display']"></span>
+                                        </td>
+                                        <td>
+                                            <span t-out="leave['date_to']"></span>
+                                        </td>
+                                        <td>
+                                            <span t-out="leave['date_from']"></span>
+                                        </td>
+                                        <td>
+                                            <span t-out="leave['holiday_type'][1]"></span>
+                                        </td>
+                                        <td>
+                                            <span t-out="leave['create_date']"></span>
+                                        </td>
+                                    </tr>
+
+                                </t>
+
+                            </tbody>
+                        </table>
+
+
+                    </page>
+                </t>
+            </t>
+
+
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <data>
+  
+    
+  <record id="aggremnt_report_view" model="ir.ui.view">
+    <field name="name">view report</field>
+    <field name="model">purchase.requisition</field>
+    <field name="inherit_id" ref='purchase_requisition.view_purchase_requisition_form'></field>
+    <field name="arch" type="xml"> 
+    <xpath expr="//button[@name='552']" position="after">
+    <button string="print report" name="print_report" type='object'  attrs="{'invisible': [('state', '=', 'draft')]}"> </button>
+    </xpath>
+    </field>
+  </record>
+  </data>
+  
+</odoo>

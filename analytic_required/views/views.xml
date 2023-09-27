@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+
+
+
+
+<record id="chart_account_partner_mandatory" model="ir.ui.view">
+            <field name="name">partner Mandatory </field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_form"/>
+             <field name="arch" type="xml">
+<!--                    <xpath expr="//field[@name='reconcile']" position="after">-->
+
+<!--                            <field name="partner_mandatory"></field>-->
+<!--                    </xpath>-->
+                 <field name="deprecated" position="after">
+                <label for="analtic_mandatory" />
+                <div >
+                   <field name="analtic_mandatory"/>
+                </div>
+            </field>
+            </field>
+        </record>
+
+
+
+  </data>
+</odoo>

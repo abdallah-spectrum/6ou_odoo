@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="employee_hr_api_inherit" model="ir.ui.view">
+        <field name="name">api.view.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="api info">
+                    <group>
+                        <field name="lms_ref" readonly="1" string="API_ref"/>
+                    </group>
+
+                </page>
+
+            </xpath>
+        </field>
+    </record>
+</odoo>

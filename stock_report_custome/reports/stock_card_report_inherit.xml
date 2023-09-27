@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <template id="my_stock_card_lines_header_inherit" inherit_id="stock_card_report.report_stock_card_lines_header">
+            <xpath expr="//div[@class='act_as_row labels']" position="inside">
+                <div class="act_as_cell">Department</div>
+            </xpath>
+        </template>
+
+
+
+
+
+        <template id="stock_card_report_line_inherit" inherit_id="stock_card_report.report_stock_card_lines">
+            <xpath expr="//div[@class='act_as_row lines']" position="inside">
+                 <div class="act_as_cell right">
+                <t t-out="product_line.department_id.name" />
+            </div>
+            </xpath>
+
+
+        </template>
+
+
+
+
+    </data>
+</odoo>

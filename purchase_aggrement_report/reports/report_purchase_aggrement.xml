@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_purchase_agreement2">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <page>
+                        <h1 class='text-center'>Comparison of tender price offers </h1>
+                      <div class='row'>
+                        <div class="col-2"><strong>Reference:</strong> </div>
+                        <div class="col-6"><span t-out='agrement["ref"]'></span></div>
+                      </div>
+                      <div class='row'>
+                        <div class="col-2"><strong>Agreement Type:</strong> </div>
+                        <div class="col-6"><span t-out='agrement["type"]'></span> </div>
+                      </div>
+                      <div class='row'>
+                        <div class="col-3"><strong>Agreement Deadline:</strong> </div>
+                        <div class="col-3"><span t-out='agrement["date_end"]'></span></div>
+                      </div>
+                      <div class='row'>
+                        <div class="col-2"><strong>State:</strong> </div>
+                        <div class="col-6"><span t-out='agrement["state"]'></span></div>
+                      </div>
+
+                        
+                        <!-- <div class='text-left'>
+                        <div class="my-rtl-div" > <strong>Reference:</strong><span t-out='agrement["ref"]'></span>
+                        </div>
+                        <div class="my-rtl-div" > <strong>Agreement Type:</strong> <span t-out='agrement["type"]'></span>
+                        </div>
+                        <div class="my-rtl-div" ><strong>Agreement Deadline:</strong> <span t-out='agrement["date_end"]'></span>
+                        </div> 
+                        <div class="my-rtl-div" ><strong>State:</strong> <span t-out='agrement["state"]'></span>
+                        </div> -->
+                    <!-- </div> -->
+                        <br></br>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>
+                                        <strong>Product code </strong>
+                                    </th>
+                                    <th>
+                                        <strong>Product name </strong>
+                                    </th>
+                                    <th>
+                                        <strong>Quantity </strong>
+                                    </th>
+                                    <th>
+                                        <strong>Vendor </strong>
+                                    </th>
+                                    <th>
+                                        <strong> RFQ </strong>
+                                    </th>
+                                    <th>
+                                        <strong> Price </strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="products" t-as="pro">
+                                    <tr>
+                                        <td>
+                                            <span t-out='pro["code"]'></span>
+                                        </td>
+
+
+                                        <td>
+                                            <span t-out='pro["name"]'></span>
+                                        </td>
+
+
+                                        <td>
+                                            <span t-out='pro["qty"]'></span>
+                                        </td>
+
+
+                                        <td>
+                                            <span t-out='pro["vendor"]'></span>
+                                        </td>
+
+
+                                        <td>
+                                            <span t-out='pro["rfq"]'></span>
+                                        </td>
+
+
+                                        <td>
+                                            <span t-out='pro["price"]'></span>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </page>
+                </t>
+            </t>
+            <style>
+                .my-rtl-div {
+                    direction: rtl;
+                }
+                .my-rtl-field {
+                    /* Other RTL styles if needed */
+                }
+            </style>
+        </template>
+    </data>
+</odoo>

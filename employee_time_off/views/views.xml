@@ -1,0 +1,36 @@
+<odoo>
+  <data>
+
+
+
+     <record id="id_employee_report" model="ir.ui.view">
+            <field name="name">employee_time_off.report.form</field>
+            <field name="model">employee_time_off.report</field>
+            <field name="arch" type="xml">
+                <form >
+                    <field name="employee"/>
+                    <field name="start_date"/>
+                    <field name="end_date" />
+                </form>
+            </field>
+        </record>
+
+
+
+       <record model="ir.actions.act_window" id="action_id_employee_report" >
+            <field name="name" >library book</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model" >employee_time_off.report</field>
+            <field name="view_mode" >form</field>
+            <field name="target">new</field>
+       </record>
+
+
+      <menuitem
+              name="time off report employees"
+              id="menu_employee_time_off_report"
+              sequence="15"
+              parent="menu_hr_holidays_root"
+              action="action_id_employee_report"/>
+  </data>
+</odoo>

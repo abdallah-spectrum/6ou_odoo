@@ -1,0 +1,22 @@
+<odoo>
+  <data>
+
+
+
+
+<record id="hournal_view_form_inherit" model="ir.ui.view">
+            <field name="name">analytics account Mandatory </field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+             <field name="arch" type="xml">
+                    <xpath expr="//field[@name='analytic_account_id']" position="attributes">
+<!--                        <attribute name="string">New hhhhhLabel</attribute>-->
+
+                    </xpath>
+            </field>
+        </record>
+
+
+
+  </data>
+</odoo>

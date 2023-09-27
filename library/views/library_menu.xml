@@ -1,0 +1,20 @@
+<odoo>
+
+    <data>
+        <record model="ir.actions.act_window" id="action_library_book" >
+            <field name="name" >library book</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model" >libray.book</field>
+            <field name="view_mode" >tree,form</field>
+
+        </record>
+
+
+
+      <menuitem id="library_menu_id" name="library app" action="action_library_book" >
+
+
+        </menuitem>
+
+    </data>
+</odoo>

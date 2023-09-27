@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_insurance" model="ir.actions.report">
+        <field name="name">debit/credit note</field>
+        <field name="model">res.company</field>
+        <field name="report_type">qweb-html</field>
+        <!-- <field name="report_type">qweb-pdf</field> -->
+        <field name="report_name">egy_emp_insurance.report_form_view</field>
+        <field name="report_file">egy_emp_insurance.report_form</field>
+        <field name="binding_model_id" ref="model_res_company"/>
+        <field name="binding_model_id" ref="model_res_company"/>
+        <field name="binding_type">report</field>
+    </record>
+    
+
+
+    <template id="report_form_view">
+        <t t-call="web.html_container">
+
+        <t t-call="web.external_layout">
+
+<div>
+<t t-if="report_name == 'debit'">
+<h3 class="text-center">Debit Note </h3>
+</t>
+<t t-if="report_name == 'credit'">
+<h3 class="text-center">Credit Note </h3>
+</t>
+          <p>From Date:   <t t-esc="from_date"/></p>
+        <p> To Date:    <t t-esc="to_date"/> </p>
+        <p> To:    <t t-esc="partner_id"/> </p>
+
+</div>
+
+
+<table  class="table " >
+    <tr>
+        <th class="text-center">account</th>
+        <th class="text-center">Date</th>
+        <th class="text-center">Amount</th>
+    </tr>
+    <t t-foreach="account_move_lines_grouped" t-as="line">
+    <tr>
+        <td >
+             <t t-esc="line['account_name']"/>
+        </td>
+        <td >
+             <t t-esc="line['date']"/>
+        </td>
+        
+        <td class="text-right">
+             
+             <t t-if="report_name == 'debit'">
+             <t t-esc="line['debit']" t-options='{"widget": "float", "precision": 2}'/>
+            </t>
+            <t t-if="report_name == 'credit'">
+             <t t-esc="line['credit']" t-options='{"widget": "float", "precision": 2}'/>
+            </t>
+
+        </td>
+    </tr>
+</t>
+<tr>
+        <td >
+            <b> Total </b>
+        </td>
+        <td >
+        </td>
+        <td  class="text-right" >
+             <t t-esc="debit_total"/>
+        </td>
+    </tr>
+</table>
+
+
+
+     </t>
+       <xpath expr="//div[contains(@t-attf-class, 'footer o_standard_footer o_company_1_layout')]" position="replace">
+
+        <!-- <div > -->
+        <div  t-attf-class="footer" >
+
+          <!-- CUSTOM FOOTER HERE -->
+       <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>   
+
+
+        </div>
+
+    </xpath>
+
+
+     </t>
+    </template>
+    
+
+
+
+</odoo>

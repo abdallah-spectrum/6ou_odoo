@@ -1,0 +1,356 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* my_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220508\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-17 07:38+0000\n"
+"PO-Revision-Date: 2023-07-17 07:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__academic_degree
+msgid "Academic Degree"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__certificate
+msgid "Certificate Level"
+msgstr "مستوى الشهادة"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_contract__college
+msgid "College"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__contrary
+msgid "Contrary"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__create_uid
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__create_uid
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__create_date
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__create_date
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__date
+msgid "Date"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_contract__degree
+msgid "Degree"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__display_name
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__display_name
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__military_status__done
+msgid "Done"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model,name:my_hr.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__employee_address
+msgid "Employee Address"
+msgstr "عنوان الموظف "
+
+#. module: my_hr
+#: model:ir.model,name:my_hr.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__employee_id
+msgid "Employee Device ID"
+msgstr "كود البصمة"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__military_status__exempted
+msgid "Exempted"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__graduation_year
+msgid "Graduation Year"
+msgstr "سنة التخرج"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__id
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__id
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__id
+msgid "ID"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties____last_update
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail____last_update
+#: model:ir.model.fields,field_description:my_hr.field_tax_main____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__write_uid
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__write_uid
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__write_date
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__write_date
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.actions.act_window,name:my_hr.action_window_main
+#: model:ir.ui.menu,name:my_hr.main
+msgid "Main"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__max_val
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__max_val
+msgid "Max Val"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__military_status
+msgid "Military Status"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__min_val
+msgid "Min Val"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__name
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__name
+msgid "Name"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__military_status__not_required
+msgid "Not required"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model,name:my_hr.model_hr_payslip
+msgid "Pay Slip"
+msgstr "إيصال دفع "
+
+#. module: my_hr
+#: model:ir.ui.menu,name:my_hr.penalties
+msgid "Penalties"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__penalty
+msgid "Penalty"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__percentage
+msgid "Percentage"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__personal_exemption
+msgid "Personal Exemption"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__military_status__postponed
+msgid "Postponed"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_penalties__salary_affected
+msgid "Salary Affected"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__segments_number
+msgid "Segments Number"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_employee__ssnid
+#: model:ir.model.fields,help:my_hr.field_hr_employee__ssnid
+msgid "Social Security Number"
+msgstr "رقم الضمان الاجتماعي"
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__starting_from
+msgid "Starting From"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_hr_contract__tax_id
+msgid "Tax"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_main__tax_lines
+msgid "Tax Lines"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__tax_id
+msgid "Tax Reference"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields,field_description:my_hr.field_tax_detail__ultimate_flag
+msgid "Ultimate Flag"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.actions.act_window,name:my_hr.penalties_window
+#: model:ir.model,name:my_hr.model_penalties
+msgid "penalties"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.ui.menu,name:my_hr.menu_root
+msgid "tax"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model,name:my_hr.model_tax_detail
+#: model:ir.model,name:my_hr.model_tax_main
+msgid "tax Model"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__primary
+msgid "ابتدائي"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__academic_degree__associate
+msgid "استاذ"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__academic_degree__associate_professor
+msgid "استاذ مساعد"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__preparatory
+msgid "اعدادي"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__none
+msgid "بدون مؤهل"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__vocational_training
+msgid "تدريب مهني"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__secondary
+msgid "ثانوي"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__graduate
+msgid "خريج"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__diploma
+msgid "دبلوم"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__master
+msgid "دراسات عليا"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__doctor
+msgid "دكتور"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__other
+msgid "غير ذلك"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__bachelor
+msgid "ليسانس/ بكالوريوس"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__literacy
+msgid "محو أمية"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__academic_degree__professor
+msgid "مدرس"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__academic_degree__assistant_professor
+msgid "مدرس مساعد"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__certificate__institute
+msgid "معهد"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__academic_degree__teaching_assistant
+msgid "معيد"
+msgstr ""
+
+#. module: my_hr
+#: model:ir.model.fields.selection,name:my_hr.selection__hr_employee__academic_degree__vice
+msgid "نائب"
+msgstr ""

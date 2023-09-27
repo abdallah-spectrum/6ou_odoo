@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="account_item_form_view_inherit" model="ir.ui.view">
+        <field name="name">account.item.form</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="api info">
+                    <group>
+                        <field name="lms_ref" readonly="1" string="API_ref"/>
+                    </group>
+
+                </page>
+
+            </xpath>
+        </field>
+    </record>
+</odoo>
